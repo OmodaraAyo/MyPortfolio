@@ -4,7 +4,7 @@ import MenuButton from "./MenuButton";
 
 const Navbar = () => {
   const [showSideBar, setShowSideBar] = useState(false);
-  const navbarMenu = ["About", "Projects", "Contact"];
+  const navbarMenu = ["About Me", "Projects", "Contact"];
 
   useEffect(() => {
     const handleResize = () => {
