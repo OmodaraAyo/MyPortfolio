@@ -39,7 +39,7 @@ const AboutMe = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
           viewport={{ once: false, amount: 0.2 }}
-          className={`relative w-72 h-96 mt-16 lg:mt-10 cursor-pointer border border-blue-600/15 shadow-lg shadow-gray-600 rounded-3xl mb-6 transition-transform duration-800 ease-in-out transform}`}>
+          className={`relative w-72 h-96 mt-2 lg:mt-14 cursor-pointer border border-blue-600/15 shadow-lg shadow-gray-600 rounded-3xl mb-9 transition-transform duration-800 ease-in-out transform}`}>
 
           {/* frontside */}
           <div className="image-container absolute inset-0 flex justify-center bg-none backface-hidden rounded-[15px]">
