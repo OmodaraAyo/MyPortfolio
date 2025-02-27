@@ -1,10 +1,16 @@
 "use client";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 const AboutMe = () => {
+  const [startAnimation, setStartAnimation] = useState(false);
+
+  useEffect(() => {
+    setStartAnimation(true);
+  }, []);
 
   return (
-    <section className="container mx-auto px-4 mt-20" id="about me">
+    <section className="container mx-auto px-4 lg:px-14 xl:px-4 mt-20" id="about me">
       <div className="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-5">
         
         {/* Text Content */}
@@ -31,6 +37,14 @@ const AboutMe = () => {
             backend technologies and possess a solid foundation in algorithms,
             data structures, and the Object-Oriented Programming paradigm.
           </p>
+          {startAnimation && (
+        <motion.div
+          initial={{ width: 0 }}
+          animate={{ width: "100%" }}
+          transition={{ duration: 2.3, ease: "easeInOut" }}
+          className="absolute border-2 border-gray-900 md:max-w-[29rem] lg:max-w-[30rem] rounded-2xl mt-[36rem]"
+        />
+      )}
         </motion.div>
 
         {/* Image Content */}
@@ -38,11 +52,11 @@ const AboutMe = () => {
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
-          viewport={{ once: false, amount: 0.2 }}
-          className={`relative w-72 h-96 mt-2 lg:mt-14 cursor-pointer border border-blue-600/15 shadow-lg shadow-gray-600 rounded-3xl mb-9 transition-transform duration-800 ease-in-out transform}`}>
+          viewport={{ once: true, amount: 0.2 }}
+          className={`relative w-72 h-96 mt-2 lg:mt-14 lg:mr-14 xl:mr-6 cursor-pointer border border-blue-600/15 shadow-lg shadow-gray-600 rounded-3xl mb-9 transition-transform duration-800 ease-in-out transform}`}>
 
           {/* frontside */}
-          <div className="image-container absolute inset-0 flex justify-center bg-none backface-hidden rounded-[15px]">
+          <div className="image-container absolute inset-0 flex justify-center bg-none backface-hidden rounded-[15px] ">
             <img
               src="/images/self4.jpg"
               alt="Profile picture"

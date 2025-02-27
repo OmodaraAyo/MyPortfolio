@@ -1,4 +1,5 @@
 "use client";
+import {motion} from "framer-motion"
 
 const Skills = () => {
   const skills = [
@@ -15,11 +16,16 @@ const Skills = () => {
     
   ];
   return (
-    <section className="container mx-auto" id="skills">
+    <motion.section
+    initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
+          viewport={{ once: true, amount: 0.2 }}
+     className="container mx-auto px-6 md:px-4 mt-28" id="skills">
       {/* title */}
       <h1 className="text-4xl font-bold text-gray-900 text-center mb-8">
-        <p className="text-lg sm:text-[20px] md:text-[22px] text-gray-900 py-1 px-1 underline-offset-3 underline">
-          My <span className="text-blue-600">Talent</span>
+        <p className="text-lg sm:text-[20px] md:text-[22px] text-gray-900 py-1 px-1">
+          My <span className="text-blue-600 underline underline-offset-3">Talent</span>
         </p>
         <p>Professional Skills</p>
       </h1>
@@ -33,7 +39,7 @@ const Skills = () => {
           </div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 };
 

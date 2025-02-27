@@ -4,7 +4,7 @@ import MenuButton from "./MenuButton";
 
 const Navbar = () => {
   const [showSideBar, setShowSideBar] = useState(false);
-  const navbarMenu = ["About Me", "Projects", "Skills", "Contact"];
+  const navbarMenu = ["About Me", "Projects", "Skills", "Service","Contact"];
 
   useEffect(() => {
     const handleResize = () => {
@@ -32,8 +32,8 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <ul className="hidden sm:flex sm:space-x-4">
           {navbarMenu.map((menu, index) => (
-            <li key={index}>
-              <a href={`#${menu.toLowerCase()}`} onClick={() => setShowSideBar(false)} className="hover:text-blue-300">
+            <li key={index} className="border-blue-300 hover:border-b-[0.15rem] hover:scale-105 transform-border transition-all">
+              <a href={`#${menu.toLowerCase()}`} onClick={() => setShowSideBar(false)} className="hover:text-blue-300 transform transition-all duration-200 ease-in-out">
                 {menu}
               </a>
             </li>

@@ -1,11 +1,10 @@
-"use client"
+"use client";
 import Layout from "./component/Layout";
 
 const App = () => {
-
   return (
     <div>
-      <Layout/>
+      <Layout />
     </div>
   );
 };
