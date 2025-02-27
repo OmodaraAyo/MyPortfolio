@@ -12,7 +12,7 @@ const Hero = () =>  {
     <motion.section
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1.2, ease: "easeInOut" }}
+      transition={{ duration: 1.0, ease: "easeInOut" }}
       viewport={{ once: true }}
       className="container mx-auto px-4 lg:px-14 xl:px-4 py-[8rem] md:py-20 relative"
       id="about"
