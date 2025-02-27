@@ -20,7 +20,7 @@ const Footer = () => {
         viewport={{ once: true, amount: 0.2 }}
         className="container mx-auto px-4 lg:px-9 py-5"
       >
-        <h2 className="text-3xl font-bold text-white underline underline-offset-3 mb-8 place-self-center pb-6">
+        <h2 className="text-3xl font-bold text-white underline underline-offset-3 mb-8 text-center mx-auto pb-6">
           Contacts
         </h2>
 

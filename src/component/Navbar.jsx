@@ -51,7 +51,7 @@ const Navbar = () => {
             exit={{ y: "-100%", transition: { duration: 0.3, ease: "easeInOut" } }}
           >
           {/* Close (X) Button Inside Sidebar */}
-            <div className="mx-[2.3rem] mt-2"><MenuButton onClick={() => setShowSideBar(false)} isOpen={showSideBar} /></div>
+            <div className="mx-[2.3rem] mt-2 justify-self-end"><MenuButton onClick={() => setShowSideBar(false)} isOpen={showSideBar} /></div>
 
           {/* Sidebar Menu */}
           <ul
