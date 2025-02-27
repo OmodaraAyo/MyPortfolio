@@ -20,11 +20,11 @@ const Footer = () => {
         viewport={{ once: true, amount: 0.2 }}
         className="container mx-auto px-4 lg:px-9 py-5"
       >
-        <h2 className="text-3xl font-bold text-white underline underline-offset-3 mb-8 text-center mx-auto pb-6">
+        <h2 className="text-3xl font-bold text-white underline underline-offset-3 text-center mx-auto pb-6">
           Contacts
         </h2>
 
-        <div className="item-wrapper w-full flex flex-col gap-14 justify-between lg:flex-row lg:gap-0 py-6 font-inter">
+        <div className="item-wrapper w-full flex flex-col gap-14 justify-between lg:flex-row lg:gap-0 py-4 font-inter">
           {/* contacts */}
           <div className="flex flex-col gap-1 w-full lg:gap-2 lg:max-w-[30rem] ">
             <h1 className="text-gray-300 lg:-mb-3 font-light text-sm sm:text-[0.96rem] md:text-[1.1rem] lg:text-[1rem]">
@@ -43,7 +43,7 @@ const Footer = () => {
             </p>
             <h1 className="phone-list flex text-gray-400 gap-3 mt-5 text-sm sm:text-[0.96rem] md:text-[0.97rem] lg:text-[1rem]">
               <MdPhone className="text-[1.4rem] text-white lg:mt-1" />
-              <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-2 gap-2">
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-2 gap-2">
                 {contacts.map((contact, index) => (
                   <div key={index}>
                     <a
