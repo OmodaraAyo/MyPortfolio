@@ -70,7 +70,7 @@ const Projects = () => {
                 Date Created: {project.date}
               </p>
             </h3>
-            <p className="text-gray-400 mb-5 w-full px-1 py-2 text-start cursor-auto">
+            <p className="text-gray-400 mb-5 w-full px-1 py-2 text-start text-[1rem] cursor-auto">
               {project.description}
             </p>
 

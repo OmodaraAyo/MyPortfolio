@@ -18,7 +18,7 @@ const Footer = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeInOut" }}
         viewport={{ once: true, amount: 0.2 }}
-        className="container mx-auto px-4 lg:px-9 py-5"
+        className="container mx-auto px-7 lg:px-9 py-5"
       >
         <h2 className="text-3xl font-bold text-white underline underline-offset-3 mb-2 text-center mx-auto pb-6">
           Contacts

@@ -22,7 +22,8 @@ const Navbar = () => {
     <nav className="bg-gradient-to-br from-gray-900 to-gray-900 p-4 text-white border-b-2 border-dotted">
       <div className="container mx-auto flex justify-between items-center px-5">
         {/* Logo */}
-        <div className="text-[32px] font-bold font-pacifico">
+        <div className="text-[32px] font-bold font-pacifico flex">
+          <img src="/images/Group9.svg" alt="my-logo" className="w-[2.8rem] h-[2.9rem]" />
           <span className="text-blue-600">E</span>mmanuel
         </div>
 
@@ -51,7 +52,7 @@ const Navbar = () => {
             exit={{ y: "-100%", transition: { duration: 0.3, ease: "easeInOut" } }}
           >
           {/* Close (X) Button Inside Sidebar */}
-            <div className="mx-[2.3rem] mt-2 justify-self-end"><MenuButton onClick={() => setShowSideBar(false)} isOpen={showSideBar} /></div>
+            <div className="mx-[2.3rem] mt-2 py-1 flex justify-self-end items-end"><MenuButton onClick={() => setShowSideBar(false)} isOpen={showSideBar}/></div>
 
           {/* Sidebar Menu */}
           <ul

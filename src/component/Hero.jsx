@@ -25,7 +25,11 @@ const Hero = () =>  {
           className={`relative w-72 h-96 cursor-pointer border border-blue-600/15 shadow-lg shadow-gray-600 rounded-3xl mb-6 transition-transform duration-700 ease-in-out perspective-1000 ${
             flipped ? "rotate-y-180" : ""
           }`}
-          onClick={() => setFlipped(!flipped)}
+          onClick={() => {
+            if(window.innerWidth > 768){
+              setFlipped(!flipped)
+            }
+          }}
           style={{ transformStyle: "preserve-3d" }}
         >
           {/* Front Side */}

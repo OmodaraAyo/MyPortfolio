@@ -26,7 +26,7 @@ const Message = () => {
 
     if (data.success) {
       toast.success("Form Submitted Successfully", {
-        position: "bottom-right",
+        position: "top-right",
         autoClose: 3000,
         hideProgressBar: true,
         closeOnClick: true,
@@ -41,7 +41,7 @@ const Message = () => {
     } else {
       console.log("Error", data);
       toast.error(`${data.message}`, {
-        position: "bottom-right",
+        position: "top-right",
         autoClose: 3000,
         hideProgressBar: true,
         closeOnClick: false,
@@ -121,7 +121,7 @@ const Message = () => {
             required
           ></textarea>
         </div>
-        <button className="bg-blue-600 hover:bg-blue-700 flex items-center justify-center py-2 w-full max-w-[12rem] mx-auto rounded gap-1 text-white cursor-pointer border border-blue-600 hover:border-blue-700 transform transition-all duration-300 ease-in-out">
+        <button className="bg-blue-600 hover:bg-blue-700 flex items-center justify-center py-1.5 md:py-2 w-full max-w-[10rem] md:max-w-[12rem] mx-auto rounded gap-1 text-white cursor-pointer border border-blue-600 hover:border-blue-700 transform transition-all duration-300 ease-in-out">
           <p>{result ? result : "Send Message"}</p>
           <FiSend className="mt-1" />
         </button>

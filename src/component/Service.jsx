@@ -47,7 +47,7 @@ const Service = () => {
             key={index}
             className="w-full bg-gray-800 flex flex-col items-center justify-center rounded-2xl cursor-pointer lg:px-5 py-10 drop-shadow-xl shadow-gray-900"
           >
-            <div className="flex flex-col justify-center items-center gap-2.5">
+            <div className="flex flex-col justify-center items-center gap-2.5 py-6 w-full h-24">
               <img
                 src={item.icon}
                 alt={item.title}
@@ -59,11 +59,11 @@ const Service = () => {
                     item.title === "API Design / Integration",
                 })}
               />
-              <p className="cursor-auto font-bold">
+              <p className="cursor-auto font-bold text-[0.97rem] sm:text-[1.1rem]">
                 {item.title.toUpperCase()}
               </p>
             </div>
-            <p className="w-full md:max-w-[19rem] px-14 md:px-8 md:text-center text-gray-400 mt-5 md:text-[0.9rem] lg:text-[1rem] cursor-auto">
+            <p className="w-full px-10 md:px-8 md:text-center text-gray-400 mt-5 text-[1.1rem] md:text-[0.8rem] lg:text-[1rem] cursor-auto h-20">
               {item.description}
             </p>
           </div>

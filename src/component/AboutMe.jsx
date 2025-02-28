@@ -28,7 +28,7 @@ const AboutMe = () => {
             <span className="text-blue-600">Driven,</span> Innovative, Software
             <span className="text-blue-600 px-2.5">Engineer</span>
           </h1>
-          <p className="w-full max-w-[30rem] text-[15px] sm:text-[17px] md:text-[20px] text-gray-900 text-justify leading-relaxed font-inter">
+          <p className="w-full max-w-[30rem] md:max-w-[27rem] lg:max-w-[30rem] text-[15px] sm:text-[17px] md:text-[18px] text-gray-900 text-justify leading-relaxed font-inter">
             With over a year of experience in software and solution development,
             I am a highly consistent individual with a strong eagerness to learn
             new concepts and technologies. I am passionate about software
@@ -42,7 +42,7 @@ const AboutMe = () => {
           initial={{ width: 0 }}
           animate={{ width: "100%" }}
           transition={{ duration: 2.3, ease: "easeInOut" }}
-          className="absolute border-2 border-gray-900 md:max-w-[29rem] lg:max-w-[30rem] rounded-2xl mt-[36rem]"
+          className="absolute border-2 border-gray-900 md:max-w-[27rem] lg:max-w-[30rem] rounded-2xl mt-[36rem]"
         />
       )}
         </motion.div>
@@ -53,7 +53,7 @@ const AboutMe = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
           viewport={{ once: true, amount: 0.2 }}
-          className={`relative w-72 h-96 mt-2 lg:mt-14 lg:mr-14 xl:mr-6 cursor-pointer border border-blue-600/15 shadow-lg shadow-gray-600 rounded-3xl mb-9 transition-transform duration-800 ease-in-out transform}`}>
+          className={`relative w-72 h-96 mt-2 md:mt-28 lg:mr-14 xl:mr-6 cursor-pointer border border-blue-600/15 shadow-lg shadow-gray-600 rounded-3xl mb-9 transition-transform duration-800 ease-in-out transform}`}>
 
           {/* frontside */}
           <div className="image-container absolute inset-0 flex justify-center bg-none backface-hidden rounded-[15px] ">
