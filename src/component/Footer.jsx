@@ -32,7 +32,7 @@ const Footer = () => {
             </h1>
             <label
               htmlFor="next- project"
-              className="text-white text-3xl sm:text-4xl md:text-5xl font-bold w-full py-2 md:text-[1.8rem] mb-3 sm:mb-4 "
+              className="text-white text-3xl sm:text-4xl font-bold w-full py-2 md:text-[1.9rem] mb-3 sm:mb-4 font-display"
             >
               Let's Talk For your{" "}
               <span className="text-blue-600">Next Projects</span>
@@ -85,7 +85,7 @@ const Footer = () => {
           </div>
           <Message />
         </div>
-        <h3 className="text-white text-center lg:text-start mt-4 cursor-pointer">
+        <h3 className="text-[0.7rem] lg:text-[0.9rem] text-white text-center lg:text-start mt-4 cursor-pointer">
           &copy; 2025,
           <span className="px-1.5 text-blue-600">
             Omodara Emmanuel Ayodele
