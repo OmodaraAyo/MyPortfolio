@@ -22,8 +22,7 @@ const Navbar = () => {
     <nav className="bg-gradient-to-br from-gray-900 to-gray-900 p-4 text-white border-b-2 border-dotted">
       <div className="container mx-auto flex justify-between items-center px-5">
         {/* Logo */}
-        <div className="text-[32px] font-bold font-pacifico flex flex-row">
-          <img src="/images/Group9.svg" alt="my-logo" className="w-[2.8rem] h-[2.9rem]" />
+        <div className="text-[32px] font-bold font-pacifico">         
           <span className="text-blue-600">E</span>mmanuel
         </div>
 

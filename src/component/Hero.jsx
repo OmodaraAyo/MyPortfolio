@@ -26,7 +26,7 @@ const Hero = () =>  {
             flipped ? "rotate-y-180" : ""
           }`}
           onClick={() => {
-            if(window.innerWidth > 768){
+            if(window.innerWidth > 1028){
               setFlipped(!flipped)
             }
           }}
@@ -61,7 +61,7 @@ const Hero = () =>  {
                 </span>
               </p>
             </h1>
-            <div className="w-full px-2 py-2 text-[15px] flex flex-col gap-1.5 italic text-gray-400">
+            <div className="w-full px-2 py-2 text-[15px] md:text-[0.86rem] lg:text-[1rem] flex flex-col gap-1.5 italic text-gray-400">
               <p>Figure it out for yourself, my lad,</p>{" "}
               <p>You have all that the greatest of men have had,</p>{" "}
               <p>Two arms, two hands, two legs, two eyes,</p>{" "}
