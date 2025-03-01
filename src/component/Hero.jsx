@@ -14,7 +14,7 @@ const Hero = () =>  {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.0, ease: "easeInOut" }}
       viewport={{ once: true }}
-      className="container mx-auto px-4 lg:px-14 xl:px-4 py-[8rem] md:py-20 relative"
+      className="container mx-auto px-4 lg:px-14 xl:px-4 py-[8rem] md:py-20 relative transform transition-all transition-duration duration-300 ease-in-out"
       id="about"
     >
       <div className="absolute w-[14rem] h-[14rem] -z-50 bg-blue-100 rounded-full top-0 mt-13 right-0 -mb-16"></div>

@@ -19,10 +19,10 @@ const Navbar = () => {
 
 
   return (
-    <nav className="bg-gradient-to-br from-gray-900 to-gray-900 p-4 text-white border-b-2 border-dotted">
+    <nav className="bg-gradient-to-br from-gray-900 to-gray-900 p-4 text-white border-b-2 border-dotted transform transition-all duration-300 ease-in-out h-[5.3rem]">
       <div className="container mx-auto flex justify-between items-center px-5">
         {/* Logo */}
-        <div className="text-[32px] font-bold font-pacifico">         
+        <div className="text-[32px] font-bold font-pacifico px-2 h-[rem] py-1">         
           <span className="text-blue-600">E</span>mmanuel
         </div>
 
@@ -30,7 +30,7 @@ const Navbar = () => {
         <MenuButton onClick={() => setShowSideBar(true)} isOpen={showSideBar} />
 
         {/* Desktop Navigation */}
-        <ul className="hidden sm:flex sm:space-x-4">
+        <ul className="hidden sm:flex sm:space-x-4 py-3 px-2">
           {navbarMenu.map((menu, index) => (
             <li key={index} className="border-blue-300 hover:border-b-[0.15rem] hover:scale-105 transform-border transition-all">
               <a href={`#${menu.toLowerCase()}`} onClick={() => setShowSideBar(false)} className="hover:text-blue-300 transform transition-all duration-200 ease-in-out">
