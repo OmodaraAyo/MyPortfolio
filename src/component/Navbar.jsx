@@ -19,7 +19,7 @@ const Navbar = () => {
 
 
   return (
-    <nav className="bg-gradient-to-br from-gray-900 to-gray-900 p-4 text-white border-b-2 border-dotted transform transition-all duration-300 ease-in-out h-[5.3rem]">
+    <nav className="bg-gradient-to-br from-gray-900 to-gray-900 p-4 text-white border-b-2 border-dotted h-[5.3rem]">
       <div className="container mx-auto flex justify-between items-center px-5">
         {/* Logo */}
         <div className="text-[32px] font-bold font-pacifico px-2 h-[rem] py-1">         
