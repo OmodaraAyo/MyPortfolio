@@ -29,7 +29,7 @@ const Service = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeInOut" }}
       viewport={{ once: true, amount: 0.2 }}
-      className="container mx-auto px-6 md:px-4 mt-16"
+      className="container mx-auto px-6 md:px-4 mt-16 md:mt-30"
       id="service"
     >
       {/* title */}
@@ -59,11 +59,11 @@ const Service = () => {
                     item.title === "API Design / Integration",
                 })}
               />
-              <p className="cursor-auto font-bold text-[0.97rem] sm:text-[1.1rem]">
+              <p className="cursor-auto font-semibold text-[0.97rem] sm:text-[0.95rem] lg:text-[1.1rem]">
                 {item.title.toUpperCase()}
               </p>
             </div>
-            <p className="w-full px-10 md:px-8 md:text-center text-gray-400 mt-5 text-[1.1rem] md:text-[0.8rem] lg:text-[1rem] cursor-auto h-20">
+            <p className="w-full px-10 md:px-8 md:text-center text-gray-400 mt-5 text-[1.1rem] md:text-[0.85rem] lg:text-[1rem] cursor-auto h-20">
               {item.description}
             </p>
           </div>

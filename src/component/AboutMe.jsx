@@ -10,7 +10,7 @@ const AboutMe = () => {
   }, []);
 
   return (
-    <section className="container mx-auto px-4 lg:px-14 xl:px-4 mt-20" id="about me">
+    <section className="container mx-auto px-4 lg:px-14 xl:px-4 md:mt-30" id="aboutme">
       <div className="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-5">
         
         {/* Text Content */}

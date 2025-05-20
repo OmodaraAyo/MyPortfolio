@@ -10,7 +10,7 @@ const Footer = () => {
   ];
   return (
     <footer
-      className="bg-gradient-to-br from-gray-900 to-gray-900 mt-32"
+      className="bg-gradient-to-br from-gray-900 to-gray-900 mt-40"
       id="contact"
     >
       <motion.div
@@ -32,9 +32,9 @@ const Footer = () => {
             </h1>
             <label
               htmlFor="next- project"
-              className="text-white text-3xl sm:text-4xl font-bold w-full py-2 md:text-[1.9rem] mb-3 sm:mb-4 font-display"
+              className="text-white text-3xl sm:text-4xl font-bold w-full py-2 md:text-[1.9rem] mb-3 sm:mb-4 font-urbanist"
             >
-              Let's Talk For your{" "}
+              {`Let's Talk For your `}
               <span className="text-blue-600">Next Projects</span>
             </label>
             <p className="text-white w-full text-sm sm:text-[0.96rem] md:text-[1.1rem] lg:text-[1rem] font-light sm:-mt-2 lg:-mt-5">

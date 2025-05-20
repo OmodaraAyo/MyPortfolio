@@ -93,6 +93,7 @@ const Message = () => {
             <label htmlFor="phone-number">Phone Number</label>
             <input
               type="tel"
+              name="phone"
               placeholder="+808 (123) 90244"
               className="border border-gray-300 px-2 py-1.5 outline-none rounded font-normal placeholder:text-[0.92rem]"
               required
@@ -104,6 +105,7 @@ const Message = () => {
             <label htmlFor="subject">Subject</label>
             <input
               type="text"
+              name="subject"
               placeholder="Subject"
               className="border border-gray-300 px-2 py-1.5 outline-none rounded font-normal placeholder:text-[0.92rem]"
               required
@@ -115,13 +117,13 @@ const Message = () => {
         <div className="text-white flex flex-col gap-1">
           <label htmlFor="message">Message</label>
           <textarea
-            name="Message"
+            name="message"
             id="Message"
             className="border border-gray-300 px-2 py-1.5 outline-none rounded font-normal h-[7rem] resize-none"
             required
           ></textarea>
         </div>
-        <button className="bg-blue-600 hover:bg-blue-700 flex items-center justify-center py-1.5 md:py-2 w-full max-w-[10rem] md:max-w-[12rem] mx-auto rounded gap-1 text-white cursor-pointer border border-blue-600 hover:border-blue-700 transform transition-all duration-300 ease-in-out">
+        <button type="submit" className="bg-blue-600 hover:bg-blue-700 flex items-center justify-center py-1.5 md:py-2 w-full max-w-[10rem] md:max-w-[12rem] mx-auto rounded gap-1 text-white cursor-pointer border border-blue-600 hover:border-blue-700 transform transition-all duration-300 ease-in-out">
           <p>{result ? result : "Send Message"}</p>
           <FiSend className="mt-1" />
         </button>
