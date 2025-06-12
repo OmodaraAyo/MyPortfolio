@@ -39,7 +39,6 @@ const Message = () => {
       event.target.reset();
       setResult("Send Message");
     } else {
-      console.log("Error", data);
       toast.error(`${data.message}`, {
         position: "top-right",
         autoClose: 3000,
@@ -67,9 +66,11 @@ const Message = () => {
             <input
               type="text"
               name="name"
+              id="name"
               placeholder="John Doe"
-              className="border border-gray-300 px-2 py-1.5 outline-none rounded font-normal placeholder:text-[0.92rem]"
+              className="border-b border-gray-300 px-2 py-1.5 outline-none rounded font-normal placeholder:text-[0.92rem]"
               required
+              autoComplete="name"
             />
           </div>
 
@@ -79,9 +80,11 @@ const Message = () => {
             <input
               type="email"
               name="email"
+              id="email"
               placeholder="John@mail.com"
-              className="border border-gray-300 px-2 py-1.5 outline-none rounded font-normal placeholder:text-[0.92rem]"
+              className="border-b border-gray-300 px-2 py-1.5 outline-none rounded font-normal placeholder:text-[0.92rem]"
               required
+              autoComplete="email"
             />
           </div>
         </div>
@@ -90,13 +93,15 @@ const Message = () => {
         <div className="phone-number-and-subject-container text-white grid grid-cols-2 gap-5">
           {/* phone number */}
           <div className="flex flex-col gap-1">
-            <label htmlFor="phone-number">Phone Number</label>
+            <label htmlFor="phoneNumber">Phone Number</label>
             <input
               type="tel"
               name="phone"
+              id="phoneNumber"
               placeholder="+808 (123) 90244"
-              className="border border-gray-300 px-2 py-1.5 outline-none rounded font-normal placeholder:text-[0.92rem]"
+              className="border-b border-gray-300 px-2 py-1.5 outline-none rounded font-normal placeholder:text-[0.92rem]"
               required
+              autoComplete="tel"
             />
           </div>
 
@@ -107,7 +112,8 @@ const Message = () => {
               type="text"
               name="subject"
               placeholder="Subject"
-              className="border border-gray-300 px-2 py-1.5 outline-none rounded font-normal placeholder:text-[0.92rem]"
+              id="subject"
+              className="border-b border-gray-300 px-2 py-1.5 outline-none rounded font-normal placeholder:text-[0.92rem]"
               required
             />
           </div>
@@ -118,9 +124,10 @@ const Message = () => {
           <label htmlFor="message">Message</label>
           <textarea
             name="message"
-            id="Message"
-            className="border border-gray-300 px-2 py-1.5 outline-none rounded font-normal h-[7rem] resize-none"
+            id="message"
+            className="border border-gray-300 px-2 py-1.5 outline-none rounded font-normal h-[7rem] resize-none "
             required
+            aria-label="message"
           ></textarea>
         </div>
         <button type="submit" className="bg-blue-600 hover:bg-blue-700 flex items-center justify-center py-1.5 md:py-2 w-full max-w-[10rem] md:max-w-[12rem] mx-auto rounded gap-1 text-white cursor-pointer border border-blue-600 hover:border-blue-700 transform transition-all duration-300 ease-in-out">

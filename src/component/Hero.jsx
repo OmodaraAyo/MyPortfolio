@@ -100,7 +100,7 @@ const Hero = () =>  {
           <p className="w-full max-w-[30rem] text-[15px] sm:text-[17px] md:text-[20px] text-gray-900 text-justify font-inter">
             From Lagos, Nigeria, I have extensive experience working with modern
             JavaScript, crafting dynamic, responsive UIs that are both intuitive
-            and visually appealing, with strong UX/UI skills to enhance user
+            and visually appealing, with strong UI/UX skills to enhance user
             experience.
           </p>
 
@@ -108,24 +108,28 @@ const Hero = () =>  {
           <div className="socials flex items-center justify-center md:justify-start gap-5">
             <a
               href="https://www.instagram.com/notyetbutwill_?igsh=ZjY2ejB6dmg2OG1u&utm_source=qr"
+              aria-label="instagram"
               className="w-[2.3rem] h-[2.2rem] md:w-[2.6rem] md:h-[2.6rem] flex items-center justify-center border-4 border-pink-600 rounded-[9px] px-1 md:px-1.5 bg-pink-600 hover:border-pink-600 transform transition-all duration-300 hover:scale-110 shadow-lg"
             >
               <FaInstagram className="w-[30px] h-7 text-white" />
             </a>
             <a
               href="https://github.com/OmodaraAyo"
+              aria-label="github"
               className="w-[2.3rem] h-[2.2rem] md:w-[2.6rem] md:h-[2.6rem] flex items-center justify-center border-4 border-black rounded-[9px] px-0 md:px-0.5 hover:border-black transform transition-all duration-300 hover:scale-110 shadow-lg"
             >
               <FaGithub className="w-[22px] h-6 md:w-[30px] md:h-7 text-[#000]" />
             </a>
             <a
               href="https://www.linkedin.com/in/omodara-emmanuel-ayodele-99a13b311/?trk=public-profile-join-page"
+              aria-label="linkedIn"
               className="w-[2.3rem] h-[2.2rem] md:w-[2.6rem] md:h-[2.6rem] flex items-center justify-center border-4 border-white rounded-[9px] bg-white px-1 md:px-1.5 hover:border-blue-700 transform transition-all duration-300 hover:scale-110 shadow-lg"
             >
               <FaLinkedin className="w-[30px] h-7 text-blue-700" />
             </a>
             <a
               href="https://x.com/notyetbutwill?s=21&t=9aRWoOIfb1meddYKMODuTA"
+              aria-label="x"
               className="w-[2.3rem] h-[2.2rem] md:w-[2.6rem] md:h-[2.6rem] flex items-center justify-center border-4 border-black rounded-[9px] px-1 md:px-1.5 hover:border-black transform transition-all duration-300 hover:scale-110 shadow-lg"
             >
               <FaXTwitter className="w-[30px] h-7 text-[#000]" />
@@ -135,7 +139,7 @@ const Hero = () =>  {
           {/* Download Resume Button */}
           <div className="flex space-x-4 justify-center md:justify-start">
             <a
-              href="/pdf/resume.pdf"
+              href="/pdf/omodara-ayodele-emmanuel-cv.pdf"
               target="_blank"
               rel="noopener noreferrer"
               download="OMODARA_EMMANUEL_AYODELE-FULLSTACK.Resume"

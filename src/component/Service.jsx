@@ -63,7 +63,7 @@ const Service = () => {
                 {item.title.toUpperCase()}
               </p>
             </div>
-            <p className="w-full px-10 md:px-8 md:text-center text-gray-400 mt-5 text-[1.1rem] md:text-[0.85rem] lg:text-[1rem] cursor-auto h-20">
+            <p className="w-full px-10 md:px-8 text-center text-gray-400 mt-5 text-[1.1rem] md:text-[0.85rem] lg:text-[1rem] cursor-auto h-20 text-ellipsis line-clamp-3">
               {item.description}
             </p>
           </div>

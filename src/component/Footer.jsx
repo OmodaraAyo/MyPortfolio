@@ -31,7 +31,7 @@ const Footer = () => {
               Get In Touch
             </h1>
             <label
-              htmlFor="next- project"
+              htmlFor="name"
               className="text-white text-3xl sm:text-4xl font-bold w-full py-2 md:text-[1.9rem] mb-3 sm:mb-4 font-urbanist"
             >
               {`Let's Talk For your `}
