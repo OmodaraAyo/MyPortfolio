@@ -26,62 +26,66 @@ const Footer = () => {
 
         <div className="item-wrapper w-full flex flex-col gap-14 justify-between lg:flex-row lg:gap-0 py-4 font-inter">
           {/* contacts */}
-          <div className="flex flex-col gap-1 w-full lg:gap-2 lg:max-w-[30rem] ">
+          <div className="flex flex-col gap-5 w-full lg:gap-2 lg:max-w-[30rem] ">
             <h1 className="text-gray-300 lg:-mb-3 font-light text-sm sm:text-[0.96rem] md:text-[1.1rem] lg:text-[1rem]">
               Get In Touch
             </h1>
-            <label
+           <div className="flex flex-col">
+             <label
               htmlFor="name"
-              className="text-white text-3xl sm:text-4xl font-bold w-full py-2 md:text-[1.9rem] mb-3 sm:mb-4 font-urbanist"
+              className="text-white text-3xl sm:text-4xl font-bold w-full py-2 md:text-[1.9rem] mb-3 font-urbanist"
             >
               {`Let's Talk For your `}
               <span className="text-blue-600">Next Projects</span>
             </label>
-            <p className="text-white w-full text-sm sm:text-[0.96rem] md:text-[1.1rem] lg:text-[1rem] font-light sm:-mt-2 lg:-mt-5">
+            <p className="text-white w-full text-sm sm:text-[0.96rem] md:text-[1.1rem] lg:text-[1rem] -mt-3 font-light">
               Discuss a project or just want to say hi? Connect with me via
               email or through a phone call.
             </p>
-            <h1 className="phone-list flex text-gray-400 gap-3 mt-5 text-sm sm:text-[0.96rem] md:text-[0.97rem] lg:text-[1rem]">
-              <MdPhone className="text-[1.4rem] text-white lg:mt-1" />
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-2 gap-2">
-                {contacts.map((contact, index) => (
-                  <div key={index}>
-                    <a
-                      href={`tel: ${contact}`}
-                      className="hover:text-white cursor-pointer"
-                    >
-                      {contact}
-                    </a>
-                  </div>
-                ))}
-              </div>
-            </h1>
+           </div>
+            <div className="flex flex-col gap-3">
+              <h1 className="phone-list flex text-gray-400 gap-3 mt-5 text-sm sm:text-[0.96rem] md:text-[0.97rem] lg:text-[1rem]">
+                <MdPhone className="text-[1.4rem] text-white lg:mt-1" />
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-2 gap-2">
+                  {contacts.map((contact, index) => (
+                    <div key={index}>
+                      <a
+                        href={`tel: ${contact}`}
+                        className="hover:text-white cursor-pointer"
+                      >
+                        {contact}
+                      </a>
+                    </div>
+                  ))}
+                </div>
+              </h1>
 
-            {/* Email */}
-            <h2 className="flex items-center gap-3 text-sm sm:text-[0.96rem] md:text-[0.97rem] lg:text-[1rem]">
-              <p className="text-white text-[1.4rem] lg:mt-1">
-                <MdEmail />
-              </p>
-              <a
-                href="mailto:ayodeleomodara1234@gmail.com"
-                className="text-gray-400 hover:text-white transition-colors cursor-pointer"
-              >
-                ayodeleomodara1234@gmail.com
-              </a>
-            </h2>
+              {/* Email */}
+              <h2 className="flex items-center gap-3 text-sm sm:text-[0.96rem] md:text-[0.97rem] lg:text-[1rem]">
+                <p className="text-white text-[1.4rem] lg:mt-1">
+                  <MdEmail />
+                </p>
+                <a
+                  href="mailto:ayodeleomodara1234@gmail.com"
+                  className="text-gray-400 hover:text-white transition-colors cursor-pointer"
+                >
+                  ayodeleomodara1234@gmail.com
+                </a>
+              </h2>
 
-            {/* whatsapp */}
-            <h3 className="flex items-center gap-3 text-sm sm:text-[0.96rem] md:text-[0.97rem] lg:text-[1rem]">
-              <p className="text-[1.4rem] text-green-500 lg:mt-1">
-                <MdWhatsapp />
-              </p>
-              <a
-                href="https://wa.me/2347083352449"
-                className="text-gray-400 hover:text-white transition-colors cursor-pointer"
-              >
-                +234 70-8335-2449
-              </a>
-            </h3>
+              {/* whatsapp */}
+              <h3 className="flex items-center gap-3 text-sm sm:text-[0.96rem] md:text-[0.97rem] lg:text-[1rem]">
+                <p className="text-[1.4rem] text-green-500 lg:mt-1">
+                  <MdWhatsapp />
+                </p>
+                <a
+                  href="https://wa.me/2347083352449"
+                  className="text-gray-400 hover:text-white transition-colors cursor-pointer"
+                >
+                  +234 70-8335-2449
+                </a>
+              </h3>
+            </div>
           </div>
           <Message />
         </div>

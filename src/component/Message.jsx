@@ -68,7 +68,7 @@ const Message = () => {
               name="name"
               id="name"
               placeholder="John Doe"
-              className="border-b border-gray-300 px-2 py-1.5 outline-none rounded font-normal placeholder:text-[0.92rem]"
+              className="border-b border-gray-300 px-2 py-1.5 outline-none  font-normal placeholder:text-[0.92rem]"
               required
               autoComplete="name"
             />
@@ -82,7 +82,7 @@ const Message = () => {
               name="email"
               id="email"
               placeholder="John@mail.com"
-              className="border-b border-gray-300 px-2 py-1.5 outline-none rounded font-normal placeholder:text-[0.92rem]"
+              className="border-b border-gray-300 px-2 py-1.5 outline-none font-normal placeholder:text-[0.92rem]"
               required
               autoComplete="email"
             />
@@ -99,7 +99,7 @@ const Message = () => {
               name="phone"
               id="phoneNumber"
               placeholder="+808 (123) 90244"
-              className="border-b border-gray-300 px-2 py-1.5 outline-none rounded font-normal placeholder:text-[0.92rem]"
+              className="border-b border-gray-300 px-2 py-1.5 outline-none font-normal placeholder:text-[0.92rem]"
               required
               autoComplete="tel"
             />
@@ -113,7 +113,7 @@ const Message = () => {
               name="subject"
               placeholder="Subject"
               id="subject"
-              className="border-b border-gray-300 px-2 py-1.5 outline-none rounded font-normal placeholder:text-[0.92rem]"
+              className="border-b border-gray-300 px-2 py-1.5 outline-none font-normal placeholder:text-[0.92rem]"
               required
             />
           </div>
