@@ -48,7 +48,7 @@ const Projects = () => {
         </span>
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 pb-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:px-6 pb-3">
         {projectsSectionData.slice(0, visibleCount).map((project, index) => {
           const delay = 0.3 + index * 0.15;
 

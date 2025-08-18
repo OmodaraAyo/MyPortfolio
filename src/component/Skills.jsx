@@ -31,7 +31,7 @@ const Skills = () => {
       </h1>
 
       {/* logo-container */}
-      <div className="grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-10 items-center justify-center px-11 py-7 gap-6">
+      <div className="grid grid-cols-4 sm:grid-cols-5 lg:grid-cols-10 items-center justify-center px-5 md:px-11 py-7 gap-6">
         {skills.map((item, index) => (
           <div key={index} className="flex flex-col items-center justify-center px-3.5 py-3 rounded-2xl shadow-black drop-shadow-lg cursor-pointer">
             <img src={item.logo} alt={item.title} className="w-[3rem] h-[3rem]"/>
