@@ -29,20 +29,13 @@ const AboutMe = () => {
             <span className="text-blue-600 px-2.5">Engineer</span>
           </h1>
           <p className="w-full max-w-[30rem] md:max-w-[27rem] lg:max-w-[30rem] text-[15px] sm:text-[17px] md:text-[18px] text-gray-900 text-justify leading-relaxed font-inter">
-            With over a year of experience in software and solution development,
-            I am a highly consistent individual with a strong eagerness to learn
-            new concepts and technologies. I am passionate about software
-            development, particularly in building scalable and efficient
-            solutions. Additionally, I have hands-on experience with various
-            backend technologies and possess a solid foundation in algorithms,
-            data structures, and the Object-Oriented Programming paradigm.
-          </p>
-          {startAnimation && (
+            {`            With two years of experience in software development, I specialize in building scalable backend systems using Java, Spring Boot, and databases (relational and NoSQL), while also developing responsive, user-friendly interfaces with React, TypeScript, and JavaScript. I have a solid foundation in algorithms, data structures, and object-oriented programming, and I’m driven by a passion for creating efficient, reliable solutions that solve real-world problems.`}          </p>
+        {startAnimation && (
         <motion.div
           initial={{ width: 0 }}
           animate={{ width: "100%" }}
           transition={{ duration: 2.3, ease: "easeInOut" }}
-          className="absolute border-2 border-gray-900 md:max-w-[27rem] lg:max-w-[30rem] rounded-2xl mt-[36rem]"
+          className="absolute border-2 border-gray-900 md:max-w-[27rem] lg:max-w-[30rem] rounded-2xl mt-[32rem]"
         />
       )}
         </motion.div>

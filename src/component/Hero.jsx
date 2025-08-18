@@ -10,8 +10,8 @@ const Hero = () =>  {
 
   return (
     <motion.section
-      initial={{ opacity: 0, y: 100 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1}}
       transition={{ duration: 1.0, ease: "easeInOut" }}
       viewport={{ once: true }}
       className="container mx-auto px-4 lg:px-14 xl:px-4 py-[8rem] md:py-20 relative transform transition-all transition-duration duration-300 ease-in-out"
@@ -20,9 +20,9 @@ const Hero = () =>  {
       <div className="absolute w-[14rem] h-[14rem] -z-50 bg-blue-100 rounded-full top-0 mt-13 right-0 -mb-16"></div>
       
       <div className="flex flex-col md:flex-row items-center justify-between md:gap-8 lg:gap-5">
-        {/* Image Card with Flip Effect */}
+        {/* Image Card Flip Effect */}
         <div
-          className={`relative w-72 h-96 cursor-pointer border border-blue-600/15 shadow-lg shadow-gray-600 rounded-3xl mb-6 transition-transform duration-700 ease-in-out perspective-1000  ${
+          className={`relative w-72 h-96 cursor-pointer border border-blue-600/15 shadow-lg shadow-gray-600 rounded-3xl mb-6 transition-transform duration-700 ease-in-out perspective-1000 transform-gpu ${
             flipped ? "rotate-y-180" : ""
           }`}
           onClick={() => {
@@ -45,6 +45,7 @@ const Hero = () =>  {
               src="/images/semicolon3.jpg"
               alt="Profile picture"
               className="relative z-10 w-full h-auto object-cover rounded-3xl border-2 border-gray-900 shadow-2xl"
+              loading="lazy"
             />
           </motion.div>
 
@@ -67,7 +68,7 @@ const Hero = () =>  {
               <p>Two arms, two hands, two legs, two eyes,</p>{" "}
               <p>And a brain to use if you would be wise.</p>{" "}
               <p>With this equipment they all began,</p>{" "}
-              <p>Get hold of yourself, and say: "I can."</p>
+              <p>Get hold of yourself, and say: I can.</p>
               <a
                 href="https://docs.google.com/document/d/1MFyOT6U3aSbFtkeUN6a9rOpLDGzL5-oFGYg3YtObrzo/edit?usp=sharing"
                 className="text-center w-full bg-blue-500 hover:bg-blue-600 rounded-2xl py-1 mt-4 text-white"
@@ -98,10 +99,7 @@ const Hero = () =>  {
             Software engineer | Creative Thinker
           </p>
           <p className="w-full max-w-[30rem] text-[15px] sm:text-[17px] md:text-[20px] text-gray-900 text-justify font-inter">
-            From Lagos, Nigeria, I have extensive experience working with modern
-            JavaScript, crafting dynamic, responsive UIs that are both intuitive
-            and visually appealing, with strong UI/UX skills to enhance user
-            experience.
+            Based in Lagos, Nigeria, I&apos;m a backend focused full-stack developer skilled in Java, Spring Boot, and MongoDB, with strong frontend experience in React, TypeScript, and JavaScript. I build reliable systems and engaging interfaces that transform ideas into fully functional products.
           </p>
 
           {/* Social Links */}
@@ -139,7 +137,7 @@ const Hero = () =>  {
           {/* Download Resume Button */}
           <div className="flex space-x-4 justify-center md:justify-start">
             <a
-              href="/pdf/omodara-ayodele-emmanuel-cv.pdf"
+              href="/pdf/v3_omodara-ayodele-emmanuel-cv-compressed.pdf"
               target="_blank"
               rel="noopener noreferrer"
               download="OMODARA_EMMANUEL_AYODELE-FULLSTACK.Resume"
