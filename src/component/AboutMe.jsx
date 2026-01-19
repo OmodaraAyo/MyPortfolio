@@ -29,7 +29,7 @@ const AboutMe = () => {
             <span className="text-blue-600 px-2.5">Engineer</span>
           </h1>
           <p className="w-full max-w-[30rem] md:max-w-[27rem] lg:max-w-[30rem] text-[15px] sm:text-[17px] md:text-[18px] text-gray-900 text-justify leading-relaxed font-inter">
-            {`            With two years of experience in software development, I specialize in building scalable backend systems using Java, Spring Boot, and databases (relational and NoSQL), while also developing responsive, user-friendly interfaces with React, TypeScript, and JavaScript. I have a solid foundation in algorithms, data structures, and object-oriented programming, and I’m driven by a passion for creating efficient, reliable solutions that solve real-world problems.`}          </p>
+            {`            With three years of experience in software development, I’ve worked on designing and maintaining backend systems, handling data storage, and building features that are used in real products. I care about writing clear, maintainable code, thinking through edge cases, and understanding how systems behave in production. I also enjoy working across the frontend when needed, building interfaces that are practical and easy to use.`}          </p>
         {startAnimation && (
         <motion.div
           initial={{ width: 0 }}

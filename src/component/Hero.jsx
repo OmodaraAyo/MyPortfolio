@@ -99,8 +99,7 @@ const Hero = () =>  {
             Software engineer | Creative Thinker
           </p>
           <p className="w-full max-w-[30rem] text-[15px] sm:text-[17px] md:text-[20px] text-gray-900 text-justify font-inter">
-            Based in Lagos, Nigeria, I&apos;m a backend focused full-stack developer skilled in Java, Spring Boot, and MongoDB, with strong frontend experience in React, TypeScript, and JavaScript. I build reliable systems and engaging interfaces that transform ideas into fully functional products.
-          </p>
+          Based in Lagos, Nigeria, I&apos;m a backend focused full-stack developer working with Java and Spring Boot, using both relational and NoSQL databases in real world systems. I also build frontend features with React, TypeScript, and JavaScript, focusing on reliable systems and clear interfaces.          </p>
 
           {/* Social Links */}
           <div className="socials flex items-center justify-center md:justify-start gap-5">
@@ -137,7 +136,7 @@ const Hero = () =>  {
           {/* Download Resume Button */}
           <div className="flex space-x-4 justify-center md:justify-start">
             <a
-              href="/pdf/v3_omodara-ayodele-emmanuel-cv-compressed.pdf"
+              href="/pdf/Backend_Engineer_Omodara_Emmanuel_Ayodele.pdf"
               target="_blank"
               rel="noopener noreferrer"
               download="OMODARA_EMMANUEL_AYODELE-FULLSTACK.Resume"
