@@ -1,11 +1,17 @@
 export const projectsSectionData = [
   {
+    title: "Liftly",
+    link: "https://liftly-3xhb.vercel.app/",
+    github: "https://github.com/OmodaraAyo/liftly-demo",
+    figma:"https://www.figma.com/proto/HumFB77QoBhItt2KaiYyzj/Liftly?node-id=9-23&p=f&t=nNhnlXcrNwdNXqTw-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=9%3A23",
+    date: "2026/01/10 WAT",
+  },
+  {
     title: "MyHome-Solution",
     link: "https://myhomesolution.onrender.com/",
     github: "https://github.com/OmodaraAyo/MyHomeSolution",
     date: "2025/06/29 WAT",
   },
-
   {
     title: "Veegil-bank",
     link: "https://veegil-bank-3z51.onrender.com/",

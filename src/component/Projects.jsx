@@ -95,9 +95,26 @@ const Projects = () => {
                   )}
                 </div>
 
-                <p className="text-[0.757rem] font-normal text-[#d8d8d8] mb-4 cursor-auto">
-                  Date Created: {project.date}
-                </p>
+                {/* Meta info section with fixed height to maintain consistency */}
+                <div className="mb-4 min-h-[40px]">
+                  <p className="text-[0.757rem] font-normal text-[#d8d8d8] cursor-auto">
+                    Date Created: {project.date}
+                  </p>
+                  {project.figma && (
+                    <a
+                      href={project.figma}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`text-[0.757rem] font-normal ${
+                        activeCard === index ? "text-blue-200" : "text-[#d8d8d8]"
+                      } hover:text-blue-400 transition-colors inline-flex items-center gap-1 mt-1`}
+                      title="View Figma Design"
+                    >
+                      <FiExternalLink className="w-3 h-3" />
+                      <span>View Design</span>
+                    </a>
+                  )}
+                </div>
 
                 <p className="text-gray-400 mb-5 w-full px-1 py-2 text-start text-[1rem] cursor-auto">
                   {project.description}
@@ -137,7 +154,7 @@ const Projects = () => {
         <div className="mt-10 flex justify-center">
           <button
             onClick={handleViewMore}
-            className="px-6 py-2 text-white bg-blue-700 rounded-xl hover:bg-blue-800 transition duration-300 cursor-pointer"
+            className="px-6 py-2 text-white bg-blue-700 rounded-lg hover:bg-blue-800 transition duration-300 cursor-pointer"
           >
             View More
           </button>

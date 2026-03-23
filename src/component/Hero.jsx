@@ -99,7 +99,7 @@ const Hero = () =>  {
             Software engineer | Creative Thinker
           </p>
           <p className="w-full max-w-[30rem] text-[15px] sm:text-[17px] md:text-[20px] text-gray-900 text-justify font-inter">
-          Based in Lagos, Nigeria, I&apos;m a backend focused full-stack developer working with Java and Spring Boot, using both relational and NoSQL databases in real world systems. I also build frontend features with React, TypeScript, and JavaScript, focusing on reliable systems and clear interfaces.          </p>
+          Based in Lagos, Nigeria, I&apos;m a frontend focused full-stack developer working with Java and Spring Boot, using both relational and NoSQL databases in real world systems. I also build frontend features with React, TypeScript, and JavaScript, focusing on reliable systems and clear interfaces.          </p>
 
           {/* Social Links */}
           <div className="socials flex items-center justify-center md:justify-start gap-5">
@@ -140,7 +140,7 @@ const Hero = () =>  {
               target="_blank"
               rel="noopener noreferrer"
               download="OMODARA_EMMANUEL_AYODELE-FULLSTACK.Resume"
-              className="flex space-x-1.5 justify-center items-center bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 md:px-6 md:py-3 rounded-full transform transition-all duration-300 shadow-lg"
+              className="flex space-x-1.5 justify-center items-center bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 md:px-6 md:py-3 rounded-lg transform transition-all duration-300 shadow-lg"
             >
               <Download className="w-5 h-5" />
               <p>Download Resume</p>
